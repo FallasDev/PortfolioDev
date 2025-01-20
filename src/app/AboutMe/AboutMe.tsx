@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaRegUserCircle } from "react-icons/fa";
 
 function AboutMe() {
@@ -10,7 +11,7 @@ function AboutMe() {
         </h2>
       </header>
       <div className="flex gap-4">
-        <img src="/collageAvatar.webp" className="bg-cover" width={450} height={500} alt="Collage" />
+        <Image src="/collageAvatar.webp" className="bg-cover" width={450} height={500} alt="Collage" />
         <div>
           <h3 className="font-semibold font-poppins text-primaryText text-2xl">
             Who am I?

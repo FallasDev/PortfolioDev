@@ -7,6 +7,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGithub } from "react-icons/lu";
 import { MdPreview } from "react-icons/md";
 import Link from "next/link";
+import Image from "next/image";
 
 function ProjectCard(project: Project) {
   console.log(project);
@@ -44,9 +45,10 @@ function ProjectCard(project: Project) {
           style={{ backgroundImage: `url('${project.image}')` }}
         ></div>
         {project.github === "In Progress" && (
-          <img
+          <Image
             className="absolute top-[0%] right-[15%]"
             src="/commingSoon.webp"
+            alt="Comming Soon"
           />
         )}
       </div>
