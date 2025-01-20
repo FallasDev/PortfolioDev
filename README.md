@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Welcome to My Portfolio 🌟
 
-## Getting Started
+Hello! I'm **Sebastián Fallas**, a passionate **Front-End Developer** dedicated to crafting visually stunning, responsive, and user-friendly web experiences. Welcome to my portfolio repository, where I showcase my skills, projects, and a glimpse of my journey in the world of web development.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About Me
+I'm currently a student of **Computer Science and Business** at the University of Costa Rica, with a love for creating intuitive and dynamic user interfaces. Over the past couple of years, I've focused on building web applications using technologies like:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **React**: For building dynamic user interfaces.
+- **TypeScript**: Ensuring type safety and maintainability.
+- **TailwindCSS**: Crafting beautiful, responsive designs quickly.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I thrive on turning ideas into real-world solutions while keeping code clean, reusable, and scalable.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Features of My Portfolio
+- **Interactive and Responsive Design**: Optimized for various devices.
+- **Dynamic Project Showcase**: Projects that highlight my growth and technical expertise.
+- **Dark Themed Interface**: A beautiful, minimalistic dark mode with a touch of elegance.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Projects Highlighted
+### [NasaTube](https://your-nasatube-link.com)
+A creative web application leveraging the NASA API to display breathtaking space content. Users can browse images, videos, and facts about space exploration.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### [NewsApp](https://your-newsapp-link.com)
+A modern news aggregator fetching real-time headlines using the GNews API. Clean architecture principles applied for maintainability and scalability.
 
-## Deploy on Vercel
+### [Taskify](https://your-taskify-link.com)
+A comprehensive project management tool built with **Flask** and **React**. It features task tracking, project boards, and team collaboration tools.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Technologies Used
+- **React.js**
+- **TypeScript**
+- **TailwindCSS**
+- **Next.js** 
+
+---
+
+## Installation and Setup
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/FallasDev/portfolio.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd portfolio
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open your browser and visit `http://localhost:3000`.
+
+---
+
+## Deployment
+This portfolio is deployed on **Vercel** for fast and efficient hosting.
+
+---
+
+## License
+This project is open source under the MIT license. Feel free to use it, contribute to it, or be inspired by it!
+
+---
+
+## Connect with Me
+- [LinkedIn](https://www.linkedin.com/in/sebastian-fallas)
+- [Twitter](https://twitter.com/sebastianfallas)
+
+Thank you for visiting my portfolio! If you have any feedback or want to collaborate, feel free to reach out!
+
