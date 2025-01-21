@@ -1,20 +1,7 @@
-"use client";
-
 import Link from "next/link";
 import Hero from "@Hero/Hero";
 
 function Header() {
-
-
-
-  window.onscroll = function (){
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 60){
-      nav?.classList.add('backdrop-blur-md');
-    } else {
-      nav?.classList.remove('backdrop-blur-md');
-    }
-  }
 
   return (
     <header className="w-full xl:mt-4 xl:w-1/2 flex flex-col gap-12 items-center h-[50%]">
