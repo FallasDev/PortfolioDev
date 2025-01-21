@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Hero from "@Hero/Hero";
-import { log } from "console";
 
 function Header() {
 
