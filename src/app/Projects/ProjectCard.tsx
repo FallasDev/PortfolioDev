@@ -10,8 +10,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 function ProjectCard(project: Project) {
-  console.log(project);
-
   const tecnologies = {
     React: {
       color: "#007ACC",
