@@ -36,8 +36,8 @@ function ProjectCard(project: Project) {
   };
 
   return (
-    <li className="flex gap-8 relative max-h-[400px] flex-col lg:flex-row">
-      <div className="w-[50%] h-[400px]  relative">
+    <li className="flex gap-8 w-full  relative  xl:max-h-[400px]  flex-col items-center xl:items-start xl:flex-row">
+      <div className="w-[80%] xl:w-[50%] h-[340px]  relative">
         <div
           className={`w-full h-full bg-cover object-cover rounded-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:opacity-80 ${
             project.github === "In Progress" && "blur-sm"
@@ -49,11 +49,13 @@ function ProjectCard(project: Project) {
             className="absolute top-[0%] right-[15%]"
             src="/commingSoon.webp"
             alt="Comming Soon"
+            width={300}
+            height={300}
           />
         )}
       </div>
 
-      <div className="w-[50%] flex flex-col gap-4">
+      <div className="w-[80%] xl:w-[50%] flex flex-col gap-4">
         <h2 className="text-primaryText font-poppins font-semibold text-4xl">
           {project.title}
         </h2>
@@ -74,7 +76,7 @@ function ProjectCard(project: Project) {
         <p className="font-poppins text-secondaryText">
           Development: {project.date}
         </p>
-        <p className="font-poppins text-lg text-primaryText font-medium">
+        <p className="font-poppins text-sm text-primaryText font-medium">
           {project.description}
         </p>
         <div className="flex gap-4">

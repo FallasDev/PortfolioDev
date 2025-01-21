@@ -5,8 +5,8 @@ import { FaLinkedin } from "react-icons/fa";
 
 function Hero() {
   return (
-    <div className=" flex w-full h-[70%] mt-32 items-center justify-between flex-col lg:flex-row">
-      <div className="w-[80%] flex flex-col  gap-4 lg:w-[60%] text-center lg:text-left">
+    <div className=" flex w-full h-[70%] mt-32 items-center justify-between flex-col xl:flex-row">
+      <div className="w-[80%] flex flex-col  gap-4 xl:w-[60%] text-center xl:text-left">
         <h1 className="text-primaryText font-poppins text-6xl flex font-semibold flex-col">
           Hey 👋🏻,<span className="">I am Sebastián Fallas</span>
         </h1>
@@ -17,7 +17,7 @@ function Hero() {
           creating accessible experiences, and building modern web solutions
           that prioritize usability.
         </p>
-        <ul className="flex gap-4 items-center">
+        <ul className="flex gap-4 items-center justify-center  xl:justify-start">
           <li>
             <Link
               href="https://www.linkedin.com/in/sebas-fallas-33ba81256/"

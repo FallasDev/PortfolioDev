@@ -17,7 +17,7 @@ function getProjects(): Array<Project> {
         id: 2,
         title: "News App",
         description:
-          "News App is a web-based application built using the GNews API to provide users with real-time news articles on various topics. Developed with a clean and hexagonal architecture, it emphasizes separation of concerns, scalability, and maintainability. ",
+          "A real-time news platform leveraging the GNews API. Built with hexagonal architecture for scalability and maintainability.",
         image: "/newsAppAvatar.webp",
         github: "https://github.com/FallasDev/NewsApp",
         url: "https://news-app-eight-smoky.vercel.app/",

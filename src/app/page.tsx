@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Header/>
-      <main className="w-full lg:w-1/2 flex flex-col gap-12 items-center scroll-smooth">
+      <main className="w-full xl:w-1/2 flex flex-col gap-12 items-center scroll-smooth">
         <Projects/>
         <AboutMe/>
         <Footer/>
