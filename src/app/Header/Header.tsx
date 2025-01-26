@@ -2,16 +2,19 @@
 
 import MobileHeader from "./MobileHeader";
 import DestktopHeader from "./DestktopHeader";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Header() {
 
   const [screen, setScreen] = useState(1124);
 
-  window.addEventListener("resize",() => {
-    console.log(window.screen.width);
-    setScreen(window.screen.width);
-  })
+
+  useEffect(() => {
+      window.addEventListener("resize",() => {
+        console.log(window.screen.width);
+        setScreen(window.screen.width);
+      })
+  },[screen])
 
 
   return (
