@@ -1,10 +1,8 @@
 "use client";
 
-import Link from "next/link";
-import Hero from "@Hero/Hero";
 import MobileHeader from "./MobileHeader";
 import DestktopHeader from "./DestktopHeader";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Header() {
 

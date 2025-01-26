@@ -1,5 +1,4 @@
 import Hero from "@Hero/Hero";
-import exp from "constants";
 import Link from "next/link";
 
 function DestktopHeader({width} : {width: number}) {
