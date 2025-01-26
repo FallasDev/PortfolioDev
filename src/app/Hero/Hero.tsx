@@ -3,9 +3,9 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 
-function Hero() {
+function Hero({width} : {width: number}) {
   return (
-    <div className=" flex w-full h-[70%] mt-32 items-center justify-between flex-col xl:flex-row">
+    <div className={`flex w-full h-[70%] mt-32 items-center justify-between flex-col xl:flex-row`} style={width < 1124 ? {marginTop: "2rem"} : {marginTop: "8rem"}}>
       <div className="w-[80%] flex flex-col  gap-4 xl:w-[60%] text-center xl:text-left">
         <h1 className="text-primaryText font-poppins text-6xl flex font-semibold flex-col">
           Hey 👋🏻,<span className="">I am Sebastián Fallas</span>
