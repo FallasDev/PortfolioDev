@@ -30,7 +30,7 @@ function getProjects(): Array<Project> {
         description: "DevOrbit is a platform focused on continuous learning of web programming. It offers high-quality resources that enable users to develop their skills in a practical and comprehensive way.",
         image: "/devOrbitAvatar.webp",
         github: "https://github.com/FallasDev/DevOrbit",
-        url: "dev-orbit-eta.vercel.app",
+        url: "https://dev-orbit-eta.vercel.app/",
         date: "11-5-2025",
         tecnologies: ["SpringBoot", "JavaScript", "Boostrap"]
     }
