@@ -30,7 +30,19 @@ function ProjectCard(project: Project) {
     Python: {
       color: "#3776AB",
       icon: <SiPython size={30} />,
+    }, 
+    Boostrap: {
+      color: "#7311F0",
+      icon: <SiBootstrap size={30}/>
     },
+    SpringBoot: {
+      color: "#6AAD3D",
+      icon: <SiSpringboot size={30}/>
+    },
+    JavaScript: {
+      color: "#EFD81D",
+      icon: <SiJavascript size={30}/>
+    }
   };
 
   return (
