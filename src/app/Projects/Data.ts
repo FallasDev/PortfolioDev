@@ -2,16 +2,15 @@ import Project from "./Project";
 
 function getProjects(): Array<Project> {
   return [
-    {
-      id: 1,
-      title: "NASATUBE",
-      description:
-        "NasaTube is a web application that uses NASA’s API to display captivating space images and videos. Inspired by YouTube’s layout, it allows users to explore fascinating astronomical content, from planets and galaxies to historical space missions. ",
-      image: "/nasatubeAvatar.webp",
-      github: "https://github.com/FallasDev/NASATUBE",
-      url: "https://nasatube-5gcwifh1q-fallasdevs-projects.vercel.app/",
-      date: "5-12-2023",
-      tecnologies: ["React", "TypeScript"],
+      {
+        id: 1,
+        title: "DevOrbit",
+        description: "DevOrbit is a platform focused on continuous learning of web programming. It offers high-quality resources that enable users to develop their skills in a practical and comprehensive way.",
+        image: "/devOrbitAvatar.webp",
+        github: "https://github.com/FallasDev/DevOrbit",
+        url: "https://dev-orbit-eta.vercel.app/",
+        date: "11-5-2025",
+        tecnologies: ["SpringBoot", "JavaScript", "Boostrap"]
     },
     {
         id: 2,
@@ -20,19 +19,9 @@ function getProjects(): Array<Project> {
           "A real-time news platform leveraging the GNews API. Built with hexagonal architecture for scalability and maintainability.",
         image: "/newsAppAvatar.webp",
         github: "https://github.com/FallasDev/NewsApp",
-        url: "https://news-app-eight-smoky.vercel.app/",
+        url: "https://news-ln433dprv-fallasdevs-projects.vercel.app/",
         date: "11-8-2024",
         tecnologies: ["React", "TypeScript", "TailwindCSS"],
-    },
-    {
-        id: 3,
-        title: "DevOrbit",
-        description: "DevOrbit is a platform focused on continuous learning of web programming. It offers high-quality resources that enable users to develop their skills in a practical and comprehensive way.",
-        image: "/devOrbitAvatar.webp",
-        github: "https://github.com/FallasDev/DevOrbit",
-        url: "https://dev-orbit-eta.vercel.app/",
-        date: "11-5-2025",
-        tecnologies: ["SpringBoot", "JavaScript", "Boostrap"]
     }
   ];
 }
