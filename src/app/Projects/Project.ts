@@ -9,7 +9,7 @@ interface Project {
     tecnologies: Array<tecnologies>;
 }
 
-export type tecnologies = "React" | "TypeScript" | "TailwindCSS" | "Flask" | "Python";
+export type tecnologies = "React" | "TypeScript" | "TailwindCSS" | "Flask" | "Python" | "Spring Boot" | "Boostrap" | "JavaScript";
 
 export default Project;
 
