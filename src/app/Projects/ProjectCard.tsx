@@ -1,4 +1,4 @@
-import { SiPython, SiTypescript,SiBoostrap,SiSpringboot,SiJavascript  } from "react-icons/si";
+import { SiPython, SiTypescript,SiBootstrap,SiSpringboot,SiJavascript  } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiFlask } from "react-icons/si";
 
@@ -33,7 +33,7 @@ function ProjectCard(project: Project) {
     }, 
     Boostrap: {
       color: "#7311F0",
-      icon: <SiBoostrap size={30}/>
+      icon: <SiBootstrap size={30}/>
     },
     SpringBoot: {
       color: "#6AAD3D",
