@@ -1,4 +1,4 @@
-import { SiPython, SiTypescript } from "react-icons/si";
+import { SiPython, SiTypescript,SiBoostrap,SiSpringboot,SiJavascript  } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiFlask } from "react-icons/si";
 
