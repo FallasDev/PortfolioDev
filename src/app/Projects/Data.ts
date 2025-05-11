@@ -32,7 +32,7 @@ function getProjects(): Array<Project> {
         github: "https://github.com/FallasDev/DevOrbit",
         url: "dev-orbit-eta.vercel.app",
         date: "11-5-2025",
-        tecnologies: ["Spring Boot", "JavaScript", "Boostrap"]
+        tecnologies: ["SpringBoot", "JavaScript", "Boostrap"]
     }
   ];
 }
