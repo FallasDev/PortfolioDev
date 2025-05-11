@@ -26,13 +26,13 @@ function getProjects(): Array<Project> {
     },
     {
         id: 3,
-        title: "Taskify",
-        description: "Taskify is a comprehensive project management application designed to streamline task and project organization.",
-        image: "/taskifyAvatar.webp",
-        github: "In Progress",
-        url: "In Progress",
-        date: "In Progress",
-        tecnologies: ["React", "TypeScript", "TailwindCSS", "Flask", "Python"]
+        title: "DevOrbit",
+        description: "DevOrbit is a platform focused on continuous learning of web programming. It offers high-quality resources that enable users to develop their skills in a practical and comprehensive way.",
+        image: "/devOrbitAvatar.webp",
+        github: "https://github.com/FallasDev/DevOrbit",
+        url: "dev-orbit-eta.vercel.app",
+        date: "11-5-2025",
+        tecnologies: ["Spring Boot", "JavaScript", "Boostrap"]
     }
   ];
 }
