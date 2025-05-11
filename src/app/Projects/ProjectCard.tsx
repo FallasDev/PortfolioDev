@@ -33,7 +33,7 @@ function ProjectCard(project: Project) {
     }, 
     Boostrap: {
       color: "#7311F0",
-      icon: <SiBootstrap size={30}/>
+      icon: <SiBoostrap size={30}/>
     },
     SpringBoot: {
       color: "#6AAD3D",
