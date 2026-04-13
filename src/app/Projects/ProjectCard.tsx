@@ -1,4 +1,4 @@
-import { SiPython, SiTypescript,SiBootstrap,SiSpringboot,SiJavascript  } from "react-icons/si";
+import { SiPython, SiTypescript,SiBootstrap,SiSpringboot,SiJavascript } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiFlask } from "react-icons/si";
 
@@ -6,11 +6,19 @@ import Project from "./Project";
 import { FaReact } from "react-icons/fa";
 import { LuGithub } from "react-icons/lu";
 import { MdPreview } from "react-icons/md";
+import { FaAngular } from "react-icons/fa";
+import { FaVuejs } from "react-icons/fa";
+import { SiFastapi } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import type { tecnologies as Technology } from "./Project";
 
 function ProjectCard(project: Project) {
-  const tecnologies = {
+  const tecnologies: Partial<
+    Record<Technology, { color: string; icon: React.ReactNode }>
+  > = {
     React: {
       color: "#007ACC",
       icon: <FaReact size={30} color="#fff" />,
@@ -42,6 +50,26 @@ function ProjectCard(project: Project) {
     JavaScript: {
       color: "#EFD81D",
       icon: <SiJavascript size={30}/>
+    },
+    Angular: {
+      color: "#DD0031",
+      icon: <FaAngular size={30} />,
+    },
+    VueJS: {
+      color: "#42B883",
+      icon: <FaVuejs size={30} />,
+    },
+    FastAPI: {
+      color: "#009688",
+      icon: <SiFastapi size={30} />,
+    },
+    MySQL: {
+      color: "#4479A1",
+      icon: <SiMysql size={30} />,
+    },
+    Java: {
+      color: "#007396",
+      icon: <FaJava size={30} />,
     }
   };
 
@@ -70,18 +98,26 @@ function ProjectCard(project: Project) {
           {project.title}
         </h2>
         <ul className="flex items-center flex-wrap gap-x-4 gap-y-2">
-          {project.tecnologies.map((tecnology) => (
-            <li
-              key={tecnology}
-              className="max-w-36 py-1 px-4 flex gap-2 items-center justify-center rounded-md text-primaryText"
-              style={{ backgroundColor: tecnologies[tecnology].color }}
-            >
-              <div>{tecnologies[tecnology].icon}</div>
-              <span className="font-poppins text-xs font-semibold">
-                {tecnology}
-              </span>
-            </li>
-          ))}
+          {project.tecnologies.map((tecnology) => {
+            const techData = tecnologies[tecnology];
+
+            if (!techData) {
+              return null;
+            }
+
+            return (
+              <li
+                key={tecnology}
+                className="max-w-36 py-1 px-4 flex gap-2 items-center justify-center rounded-md text-primaryText"
+                style={{ backgroundColor: techData.color }}
+              >
+                <div>{techData.icon}</div>
+                <span className="font-poppins text-xs font-semibold">
+                  {tecnology}
+                </span>
+              </li>
+            );
+          })}
         </ul>
         <p className="font-poppins text-secondaryText">
           Development: {project.date}
@@ -90,20 +126,27 @@ function ProjectCard(project: Project) {
           {project.description}
         </p>
         <div className="flex gap-4">
-          {project.url !== "In Progress" ? (
+          {project.disabledGithub ? (
+            <span className="flex items-center bg-secondary px-2 py-1 gap-2 rounded-md border-[1px] min-w-32 border-slate-500 text-white opacity-50 cursor-not-allowed">
+              <LuGithub size={40} className="text-white" />
+              <span>Repository</span>
+            </span>
+          ) : project.github ? (
             <Link
               target="_blank"
               className="flex items-center bg-secondary px-2 py-1 gap-2 rounded-md border-[1px] min-w-32 border-slate-500 text-white hover:scale-110 transition-all duration-300"
               href={project.github}
             >
-              <LuGithub
-                size={40}
-                className="text-white"
-              />
+              <LuGithub size={40} className="text-white" />
               <span>Repository</span>
             </Link>
           ) : null}
-          {project.url !== "In Progress" ? (
+          {project.disabledUrl ? (
+            <span className="flex items-center bg-secondary px-2 py-1 rounded-md border-[1px] min-w-24 gap-2 border-slate-500 text-white opacity-50 cursor-not-allowed">
+              <MdPreview size={40} className="text-white" />
+              <span>Live</span>
+            </span>
+          ) : project.url ? (
             <Link
               target="_blank"
               href={project.url}

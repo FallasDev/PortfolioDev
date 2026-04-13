@@ -11,11 +11,7 @@ function Hero({width} : {width: number}) {
           Hey 👋🏻,<span className="">I am Sebastián Fallas</span>
         </h1>
         <p className="text-secondaryText font-poppins font-medium text-lg">
-          Frontend Developer specializing in React, TypeScript, and responsive
-          design.{" "}
-          <span className="text-accent">I focus on writing clean code</span>,
-          creating accessible experiences, and building modern web solutions
-          that prioritize usability.
+          Web application developer, currently in the fourth year of the Business Informatics degree at the <span className="text-cyan-500"> University of Costa Rica (UCR)</span>.
         </p>
         <ul className="flex gap-4 items-center justify-center  xl:justify-start">
           <li>

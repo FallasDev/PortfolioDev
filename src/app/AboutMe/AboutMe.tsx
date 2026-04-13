@@ -18,7 +18,7 @@ function AboutMe() {
 
           <div className="w-full h-full relative bg-[url('/bandera.webp')] bg-top bg-cover"></div>
 
-          <div className="w-full h-full relative bg-[url('/Avatar.webp')] bg-center bg-cover"></div>
+          <div className="w-full h-full relative bg-[url('/AvatarThree.webp')] bg-center bg-cover"></div>
         </div>
 
         <div className="w-[80%] xl:w-[60%]">
@@ -27,18 +27,15 @@ function AboutMe() {
           </h3>
           <div className="flex gap-2 flex-col text-lg">
             <p className="font-medium font-poppins text-secondaryText">
-              I am a young professional in training, passionate about software
-              development and technology. With a solid academic background in
-              Business Informatics from the{" "}
-              <span className="text-cyan-500">University of Costa Rica.</span>
+              I focus on developing APIs that comply with RESTful standards. 
+              <span className="text-accent">
+                {" "} I have knowledge of the main concepts involved in building a solid backend system
+              </span>,
+              which allows me to adapt to different technologies as required.
             </p>
             <p className="font-medium font-poppins text-secondaryText">
-              I am a constant self-learner, always seeking new ways to grow both
-              personally and professionally. Additionally,{" "}
-              <span className="text-accent">
-                I strive to implement best practices in software development
-              </span>{" "}
-              , ensuring that my projects are robust, efficient, and scalable.
+                Additionally, I have experience working in frontend development, where I prioritize building interfaces with strong UX/UI.
+              
             </p>
           </div>
         </div>
