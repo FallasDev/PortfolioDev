@@ -79,17 +79,17 @@ function ProjectCard(project: Project) {
   };
 
   return (
-    <li className="flex gap-8 w-full  relative  xl:max-h-[400px]  flex-col items-center xl:items-start xl:flex-row">
-      <div className="w-[80%] xl:w-[50%] h-[340px]  relative">
+    <li className="flex w-full max-w-5xl flex-col items-center gap-6 overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-lg shadow-black/10 sm:p-6 xl:max-h-[400px] xl:flex-row xl:items-start xl:gap-8 xl:p-8">
+      <div className="relative h-[240px] w-full overflow-hidden rounded-2xl sm:h-[300px] xl:h-[340px] xl:w-1/2">
         <div
-          className={`w-full h-full bg-cover object-cover rounded-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:opacity-80 ${
+          className={`h-full w-full rounded-2xl bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:opacity-80 ${
             project.isInProgress && "blur-sm"
           }`}
           style={{ backgroundImage: `url('${project.image}')` }}
         ></div>
         {project.isInProgress && (
           <Image
-            className="absolute top-[0%] right-[15%]"
+            className="absolute right-2 top-2 h-auto w-[160px] sm:right-4 sm:top-4 sm:w-[220px]"
             src="/commingSoon.webp"
             alt={isEnglish ? "Coming soon" : "Próximamente"}
             width={300}
@@ -98,7 +98,7 @@ function ProjectCard(project: Project) {
         )}
       </div>
 
-      <div className="w-[80%] xl:w-[50%] flex flex-col gap-4">
+      <div className="flex w-full flex-col gap-4 xl:w-1/2">
         <h2 className="text-primaryText font-poppins font-semibold text-4xl">
           {project.title}
         </h2>
@@ -130,7 +130,7 @@ function ProjectCard(project: Project) {
         <p className="font-poppins text-sm text-primaryText font-medium">
           {project.description}
         </p>
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-4">
           {project.disabledGithub ? (
             <span className="flex items-center bg-secondary px-2 py-1 gap-2 rounded-md border-[1px] min-w-32 border-slate-500 text-white opacity-50 cursor-not-allowed">
               <LuGithub size={40} className="text-white" />
