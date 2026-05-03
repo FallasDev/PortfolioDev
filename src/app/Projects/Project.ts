@@ -6,6 +6,7 @@ interface Project {
     github: string;
     url: string;
     date: string;
+    isInProgress?: boolean;
     tecnologies: Array<tecnologies>;
     disabledGithub?: boolean;
     disabledUrl?: boolean;

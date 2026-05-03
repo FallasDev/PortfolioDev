@@ -1,6 +1,11 @@
+"use client";
+
 import { FaRegUserCircle } from "react-icons/fa";
+import { useLandingLanguage } from "@/app/LandingProvider";
 
 function AboutMe() {
+  const { isEnglish } = useLandingLanguage();
+
   return (
     <section
       id="AboutMe"
@@ -9,7 +14,7 @@ function AboutMe() {
       <header className="flex items-center gap-4">
         <FaRegUserCircle size={50} color="#fff" />
         <h2 className="text-primaryText font-poppins font-semibold font text-4xl">
-          About Me
+          {isEnglish ? "About Me" : "Sobre mí"}
         </h2>
       </header>
       <div className="flex gap-4 w-full h-full flex-col items-center xl:items-start xl:flex-row">
@@ -23,18 +28,37 @@ function AboutMe() {
 
         <div className="w-[80%] xl:w-[60%]">
           <h3 className="font-semibold font-poppins text-primaryText text-2xl">
-            Who am I?
+            {isEnglish ? "Who am I?" : "¿Quién soy?"}
           </h3>
           <div className="flex gap-2 flex-col text-lg">
             <p className="font-medium font-poppins text-secondaryText">
-              I focus on developing APIs that comply with RESTful standards. 
-              <span className="text-accent">
-                {" "} I have knowledge of the main concepts involved in building a solid backend system
-              </span>,
-              which allows me to adapt to different technologies as required.
+              {isEnglish ? (
+                <>
+                  I focus on developing APIs that comply with RESTful standards.
+                  <span className="text-accent">
+                    {" "}I have knowledge of the main concepts involved in
+                    building a solid backend system
+                  </span>
+                  , which allows me to adapt to different technologies as
+                  required.
+                </>
+              ) : (
+                <>
+                  Me enfoco en desarrollar APIs que cumplan con estándares
+                  RESTful.
+                  <span className="text-accent">
+                    {" "}Tengo conocimiento de los conceptos principales para
+                    construir un backend sólido
+                  </span>
+                  , lo que me permite adaptarme a distintas tecnologías según
+                  se requiera.
+                </>
+              )}
             </p>
             <p className="font-medium font-poppins text-secondaryText">
-                Additionally, I have experience working in frontend development, where I prioritize building interfaces with strong UX/UI.
+              {isEnglish
+                ? "Additionally, I have experience working in frontend development, where I prioritize building interfaces with strong UX/UI."
+                : "Además, tengo experiencia trabajando en desarrollo frontend, donde priorizo construir interfaces con una UX/UI sólida."}
               
             </p>
           </div>

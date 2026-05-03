@@ -1,3 +1,5 @@
+"use client";
+
 import { SiPython, SiTypescript,SiBootstrap,SiSpringboot,SiJavascript } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiFlask } from "react-icons/si";
@@ -14,8 +16,11 @@ import { FaJava } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import type { tecnologies as Technology } from "./Project";
+import { useLandingLanguage } from "@/app/LandingProvider";
 
 function ProjectCard(project: Project) {
+  const { isEnglish } = useLandingLanguage();
+
   const tecnologies: Partial<
     Record<Technology, { color: string; icon: React.ReactNode }>
   > = {
@@ -78,15 +83,15 @@ function ProjectCard(project: Project) {
       <div className="w-[80%] xl:w-[50%] h-[340px]  relative">
         <div
           className={`w-full h-full bg-cover object-cover rounded-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:opacity-80 ${
-            project.github === "In Progress" && "blur-sm"
+            project.isInProgress && "blur-sm"
           }`}
           style={{ backgroundImage: `url('${project.image}')` }}
         ></div>
-        {project.github === "In Progress" && (
+        {project.isInProgress && (
           <Image
             className="absolute top-[0%] right-[15%]"
             src="/commingSoon.webp"
-            alt="Comming Soon"
+            alt={isEnglish ? "Coming soon" : "Próximamente"}
             width={300}
             height={300}
           />
@@ -120,7 +125,7 @@ function ProjectCard(project: Project) {
           })}
         </ul>
         <p className="font-poppins text-secondaryText">
-          Development: {project.date}
+          {isEnglish ? "Development:" : "Desarrollo:"} {project.date}
         </p>
         <p className="font-poppins text-sm text-primaryText font-medium">
           {project.description}
@@ -129,7 +134,7 @@ function ProjectCard(project: Project) {
           {project.disabledGithub ? (
             <span className="flex items-center bg-secondary px-2 py-1 gap-2 rounded-md border-[1px] min-w-32 border-slate-500 text-white opacity-50 cursor-not-allowed">
               <LuGithub size={40} className="text-white" />
-              <span>Repository</span>
+              <span>{isEnglish ? "Repository" : "Repositorio"}</span>
             </span>
           ) : project.github ? (
             <Link
@@ -138,13 +143,13 @@ function ProjectCard(project: Project) {
               href={project.github}
             >
               <LuGithub size={40} className="text-white" />
-              <span>Repository</span>
+              <span>{isEnglish ? "Repository" : "Repositorio"}</span>
             </Link>
           ) : null}
           {project.disabledUrl ? (
             <span className="flex items-center bg-secondary px-2 py-1 rounded-md border-[1px] min-w-24 gap-2 border-slate-500 text-white opacity-50 cursor-not-allowed">
               <MdPreview size={40} className="text-white" />
-              <span>Live</span>
+              <span>{isEnglish ? "Live" : "En vivo"}</span>
             </span>
           ) : project.url ? (
             <Link
@@ -153,7 +158,7 @@ function ProjectCard(project: Project) {
               className="flex items-center bg-secondary px-2 py-1 rounded-md border-[1px] min-w-24 gap-2 border-slate-500 text-white hover:scale-110 transition-all duration-300"
             >
               <MdPreview size={40} className="text-white" />
-              <span>Live</span>
+              <span>{isEnglish ? "Live" : "En vivo"}</span>
             </Link>
           ) : null}
         </div>
